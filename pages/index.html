@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../styles/main.css" />
+		<link rel="stylesheet" href="../styles/global.css" />
+	</head>
+	<body>
+		<!-- navbar with pure css  -->
+		<nav class="navbar">
+			<div class="navbar__container">
+				<div class="navbarLogo">
+					<a href="/" class="logo_child">Firdavs</a>
+				</div>
+				<div class="navbar__menu">
+					<ul class="navbar__menu-list">
+						<li class="navbar__menu-item">
+							<a href="../index.html" class="navbar__menu-link">Home</a>
+						</li>
+						<li class="navbar__menu-item">
+							<a href="about.html" class="navbar__menu-link">About</a>
+						</li>
+						<li class="navbar__menu-item">
+							<a href="../contact/index.html" class="navbar__menu-link"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- banner -->
+		<div class="banner">
+			<div class="container">
+				<div class="banner-content">
+					<h1>
+						Best <span>Online</span> <br />
+						Education
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+						quod.
+					</p>
+				</div>
+				<img
+					class="arrowBottom"
+					src="../images/down-arrow.png"
+					alt="arrowBottom"
+				/>
+			</div>
+		</div>
+	</body>
+
+	<button id="myButton">click</button>
+
+	<script text="type/javascript">
+		const $ = (query) => {
+			return document.querySelector(query);
+		};
+
+		window.location.href.replace(
+			"http://127.0.0.1:5500/pages/index.html",
+			"http://127.0.0.1:5500/"
+		);
+	</script>
+	<script src="../js/helper.js"></script>
+	<script src="../js/main.js"></script>
+</html>
