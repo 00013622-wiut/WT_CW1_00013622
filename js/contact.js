@@ -11,9 +11,9 @@ $("#form").addEventListener("submit", function (e) {
         message
     }
     alert(`
-    Name: ${data.name}
-    Email: ${data.email}
-    Message: ${data.message}
+    Name: ${data?.name}
+    Email: ${data?.email}
+    Message: ${data?.message}
     `);
     $("#form").reset();
 })

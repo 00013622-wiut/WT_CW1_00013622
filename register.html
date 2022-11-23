@@ -11,9 +11,9 @@
 		/>
 		<meta name="keywords" content="Company, website" />
 		<meta name="author" content="Ergashev Firdavs" />
-		<title>About</title>
+		<title>Document</title>
 		<link rel="stylesheet" href="./styles/global.css" />
-		<link rel="stylesheet" href="./styles/about.css" />
+		<link rel="stylesheet" href="./styles/login.css" />
 	</head>
 	<body>
 		<!-- navbar with pure css  -->
@@ -65,24 +65,56 @@
 
 		<!-- banner -->
 		<div class="banner">
-			<div class="banner-container">
-				<div class="banner-content">
-					<h1 class="banner-title">About</h1>
-					<p class="banner-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-						quod, voluptatum, quae, voluptas quibusdam voluptates quia
-						accusantium quidem voluptatibus quos quas. Quisquam, quae
-						perferendis. Quisquam, quae perferendis.
+			<div class="banner-content">
+				<form class="form" id="form-register">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Enter your name"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="surname">Surname</label>
+						<input
+							type="text"
+							name="surname"
+							id="surname"
+							placeholder="Enter your surname"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter your email"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Enter your password"
+						/>
+					</div>
+					<button type="submit" class="btn">Login</button>
+					<p style="margin-left: 20px; font-size: 12px">
+						Have an account? <a href="/login">Sign in</a>
 					</p>
-				</div>
-				<img src="./images/desk.png" alt="" />
+				</form>
 			</div>
-
-			<div class="card-body" id="card-body"></div>
 		</div>
+
+		<!-- about -->
 	</body>
 
 	<script type="module" src="./js/helper.js"></script>
 	<script type="module" src="./js/main.js"></script>
-	<script type="module" src="./js/about.js"></script>
+	<script type="module" src="./js/login.js"></script>
 </html>
