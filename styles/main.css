@@ -1,56 +1,11 @@
-/* navbar */
-.navbar {
-	border: 0;
-	font-size: 16px !important;
-	line-height: 1.42857143 !important;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	backdrop-filter: blur(10px);
-	list-style: none;
-	width: 100%;
-	display: flex;
-	padding: 10px;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.navbarLogo {
-	height: 100%;
-	width: max-content;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.navbarLogo a {
-	color: #fff;
-	text-decoration: none;
-}
-/* navbar__container */
-.navbar__container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-/* navbar__menu */
-.navbar__menu > ul {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 2;
-	height: 100%;
-}
-.navbar__menu > ul > li {
-	margin: 0 20px;
-	list-style: none;
-}
-.navbar__menu > ul > li > a {
-	color: #fff;
-	text-decoration: none;
-}
-
 /* banner  */
 .banner {
-	background: url(../images/banner.jpg) no-repeat center top;
+	background: url(../images/office.jpeg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-clip: border-box;
+	backdrop-filter: blur(8px) brightness(0.5);
+	z-index: 0;
 	height: 100%;
 	width: 100%;
 	color: #fff;
@@ -58,6 +13,13 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	/* bafilter: ; */
+}
+
+.banner-content > h1 {
+	padding: 0 20px;
+	background-color: linear-gradient(90deg, #000000, #000000);
+	color: rgb(140, 140, 140);
 }
 
 /* container */
@@ -65,7 +27,7 @@
 	width: 100%;
 	max-width: 80%;
 	margin: 0 auto;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
 
 /* arrowBottom  */
