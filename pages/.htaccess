@@ -1,6 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^http://127.0.0.1:5500/pages/$ [NC]
-
-RewriteRule ^(.*)$ http://127.0.0.1:5500/pages/$1 [R=301,L]
-
