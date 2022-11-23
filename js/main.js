@@ -1,7 +1,12 @@
 import { $ } from "./helper.js"
 
-if (window.location.pathname !== "/" || window.location.pathname !== "/index.html") {
+if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    $(".navbar").style.backgroundColor = "none";
+    $(".navbar").style.position = "absolute";
+}
+else {
     $(".navbar").style.backgroundColor = "#000";
+    $(".navbar").style.position = "sticky";
 }
 if (window.screen.width > 768) {
     $(".navbar-menu-list").classList.remove("navbar-active")
