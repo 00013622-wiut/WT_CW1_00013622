@@ -1,4 +1,26 @@
 import { $ } from "./helper.js";
+const aboutCardSList = [
+  {
+    title: "Our Mission",
+    description:
+      "Is to realize the potential of our students, through our delivery of exceptional training by highly qualified and experienced teachers.",
+  },
+  {
+    title: "Our Goal",
+    description:
+      "Is the recognition of Educator LC as the best language school in Tashkent by setting quality standards in curriculum development for innovative learning and professional development.",
+  },
+  {
+    title: "Our Curriculum",
+    description:
+      "Is prepared through the years of experience along with creativity, passion and ",
+  },
+  {
+    title: "Our Teachers",
+    description:
+      "Are highly qualified with a minimum of 5 years of teaching experience. They are also trained in the latest teaching methods and techniques.",
+  },
+];
 
 const quoteContentList = [
   {
@@ -7,7 +29,7 @@ const quoteContentList = [
     author: "Oprah Winfrey",
   },
   {
-    quote: "With languages, you are at home anywhere",
+    quote: "To have another language is to possess a second soul",
     author: "Edmund De Waal",
   },
   {
@@ -20,10 +42,9 @@ for (let i = 0; i < 4; i++) {
   const card = document.createElement("div");
   card.className = "card";
   card.innerHTML = `
-<h1>Our mission</h1>
+<h1>${aboutCardSList[i].title}</h1>
 <p>
-  Is to realize the potential of our students, through our delivery of 
-  exceptional training by highly qualified and experienced teachers.
+    ${aboutCardSList[i].description}
 </p>
 `;
   $("#card-body").appendChild(card);

@@ -21,7 +21,7 @@ navbarContainer.innerHTML = `
     <a href="/contacts" class="navbar-menu-link">Contacts</a>
 </li>
 <li class="navbar__menu-item">
-    <a href="/stuff" class="navbar-menu-link">Stuff</a>
+    <a href="/staff" class="navbar-menu-link">Staff</a>
 </li>
 
 <div class="btn-group-list" style="display: none">
@@ -50,8 +50,9 @@ $("#navbar").append(navbarContainer);
 const footer = document.createElement("footer");
 footer.innerHTML = `
     <div class="footer">
+    
         <div class="footer-content">
-            Copyright 2022 &copy; All Rights Reserved
+        &copy;Copyright 2022 All Rights Reserved
         </div>
     </div>
 `;
