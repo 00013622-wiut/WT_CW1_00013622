@@ -1,7 +1,8 @@
 html {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: monospace;
+	background-color: #000;
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
@@ -13,9 +14,14 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	min-height: 100%;
 	height: 100%;
 	position: relative;
 	box-sizing: border-box;
+}
+*::selection {
+	background-color: rgb(167, 36, 36);
+	color: #fff;
 }
 
 .navbar-logo a {
@@ -27,11 +33,10 @@ body {
 	border: 0;
 	font-size: 16px !important;
 	line-height: 1.42857143 !important;
-	z-index: 3;
-	top: 0;
-	/* min-height: 60px; */
-	max-height: max-content;
+	min-height: 60px;
+	height: max-content;
 	background-color: #000;
+	border-bottom: 0.1px solid #fff;
 	width: 100%;
 	display: flex;
 	padding: 6px;
@@ -221,5 +226,8 @@ footer {
 	.navbar-active > .btn-group-list {
 		display: flex !important;
 		column-gap: 10px;
+	}
+	.btn-group {
+		display: none;
 	}
 }

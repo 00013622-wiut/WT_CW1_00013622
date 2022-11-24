@@ -1,4 +1,5 @@
 .banner {
+	background-color: #0e0e0e;
 	height: max-content;
 	width: 100%;
 	display: flex;
@@ -22,7 +23,7 @@
 .container > p {
 	font-size: 1.5em;
 	font-weight: bold;
-	color: #000;
+	color: #fff;
 	margin: 20px 0 0 10%;
 }
 .project {
@@ -46,7 +47,9 @@
 	align-items: flex-start;
 	box-sizing: border-box;
 	border-radius: 2%;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #fff;
 }
 .project-card > img {
 	border-radius: 2% 2% 0 0;
@@ -57,14 +60,16 @@
 .project-card > h1 {
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: #000;
+	color: #fff;
+
 	margin: 10px 0 10px 20px;
 }
 
 .project-card > p {
 	font-size: 1rem;
 	font-weight: 400;
-	color: #000;
+	color: #fff;
+
 	margin: 10px 0 30px 20px;
 }
 

@@ -1,4 +1,5 @@
 .banner {
+	background-color: #0e0e0e;
 	width: 100%;
 	height: max-content;
 	display: flex;
@@ -34,12 +35,12 @@
 	align-items: center;
 	text-align: left;
 	line-height: 20px;
-	color: #000;
 	/* z-index: 1; */
 	box-sizing: border-box;
 }
 .banner-content h1 {
 	font-size: 3rem;
+	color: #fff;
 }
 
 .stuff {
@@ -71,17 +72,9 @@
 	object-fit: cover;
 	border-radius: 100%;
 }
-@keyframes bounce {
-	/* 20%, */
-	0% {
-		transform: translateY(0);
-	}
-
-	100% {
-		transform: translateY(15px);
-	}
+.stuff-item > h3 {
+	color: #fff !important;
 }
-
 @media screen and (max-width: 768px) {
 	.banner {
 		padding-top: 16%;
@@ -104,15 +97,5 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-	}
-	.card {
-		width: 80%;
-		font-size: 13px;
-	}
-	.card > h1 {
-		font-size: 1.5rem;
-	}
-	.card > p {
-		font-size: 1rem;
 	}
 }

@@ -17,57 +17,18 @@
 	</head>
 	<body>
 		<!-- navbar with pure css  -->
-		<nav class="navbar">
-			<div class="navbar-container">
-				<div class="navbar-logo">
-					<a href="/" class="logo-child">Educator</a>
-				</div>
-				<ul class="navbar-menu-list list">
-					<li class="navbar-menu-item">
-						<a href="/" class="navbar-menu-link">Home</a>
-					</li>
-					<li class="navbar__menu-item">
-						<a href="/about" class="navbar-menu-link">About</a>
-					</li>
-
-					<li class="navbar__menu-item">
-						<a href="/courses" class="navbar-menu-link">Courses</a>
-					</li>
-					<li class="navbar__menu-item">
-						<a href="/contacts" class="navbar-menu-link">Contacts</a>
-					</li>
-					<li class="navbar__menu-item">
-						<a href="/stuff" class="navbar-menu-link">Stuff</a>
-					</li>
-
-					<div class="btn-group-list" style="display: none">
-						<button type="button" class="login-login">
-							<a href="/login">Sign in</a>
-						</button>
-						<button type="button" class="login-register">
-							<a href="/register">Sign up</a>
-						</button>
-					</div>
-				</ul>
-				<div class="btn-group">
-					<button type="button" class="login-login">
-						<a href="/login">Sign in</a>
-					</button>
-					<button type="button" class="login-register">
-						<a href="/register">Sign up</a>
-					</button>
-				</div>
-				<div>
-					<button type="button" class="menu-open" id="toggleMenu">Menu</button>
-				</div>
-			</div>
-		</nav>
+		<nav class="navbar" id="navbar"></nav>
 
 		<!-- banner -->
 		<div class="banner">
 			<div class="banner-container">
 				<div class="banner-content">
-					<h1 class="banner-title">About</h1>
+					<h1
+						class="banner-title"
+						style="background-color: rgb(167, 36, 36); padding: 0.5% 0"
+					>
+						About
+					</h1>
 					<p class="banner-text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
 						quod, voluptatum, quae, voluptas quibusdam voluptates quia
@@ -75,7 +36,7 @@
 						perferendis. Quisquam, quae perferendis.
 					</p>
 				</div>
-				<img src="./images/desk.png" alt="" />
+				<div class="quotes-content"></div>
 			</div>
 
 			<div class="card-body" id="card-body"></div>

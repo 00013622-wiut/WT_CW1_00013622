@@ -17,60 +17,18 @@
 	</head>
 	<body>
 		<!-- navbar with pure css  -->
-		<nav class="navbar">
-			<div class="navbar-container">
-				<div class="navbar-logo">
-					<a href="/" class="logo-child">Educator</a>
-				</div>
-				<ul class="navbar-menu-list list">
-					<li class="navbar-menu-item">
-						<a href="/" class="navbar-menu-link">Home</a>
-					</li>
-					<li class="navbar__menu-item">
-						<a href="/about" class="navbar-menu-link">About</a>
-					</li>
-
-					<li class="navbar__menu-item">
-						<a href="/courses" class="navbar-menu-link">Courses</a>
-					</li>
-					<li class="navbar__menu-item">
-						<a href="/contacts" class="navbar-menu-link">Contacts</a>
-					</li>
-					<li class="navbar__menu-item">
-						<a href="/stuff" class="navbar-menu-link">Stuff</a>
-					</li>
-
-					<div class="btn-group-list" style="display: none">
-						<button type="button" class="login-login">
-							<a href="/login">Sign in</a>
-						</button>
-						<button type="button" class="login-register">
-							<a href="/register">Sign up</a>
-						</button>
-					</div>
-				</ul>
-				<div class="btn-group">
-					<button type="button" class="login-login">
-						<a href="/login">Sign in</a>
-					</button>
-					<button type="button" class="login-register">
-						<a href="/register">Sign up</a>
-					</button>
-				</div>
-				<div>
-					<button type="button" class="menu-open" id="toggleMenu">Menu</button>
-				</div>
-			</div>
-		</nav>
+		<nav class="navbar" id="navbar"></nav>
 
 		<!-- banner -->
 		<div class="banner">
 			<div class="container">
-				<div class="banner-content">
-					<img src="./images/passion.jpg" alt="" />
-				</div>
 				<form class="form" id="form">
-					<h1 class="banner-title" style="margin-left: 3%">Contact</h1>
+					<h1
+						class="banner-title"
+						style="margin-left: 3%; background-color: rgb(167, 36, 36)"
+					>
+						Contact
+					</h1>
 
 					<div class="form-group">
 						<label for="name">Name</label>
@@ -78,6 +36,7 @@
 							type="text"
 							name="name"
 							id="name"
+							required
 							placeholder="Enter your name"
 						/>
 					</div>
@@ -87,6 +46,7 @@
 							type="email"
 							name="email"
 							id="email"
+							required
 							placeholder="Enter your email"
 						/>
 					</div>
@@ -97,6 +57,7 @@
 							id="message"
 							cols="30"
 							rows="10"
+							required
 							placeholder="Enter your message"
 						></textarea>
 					</div>

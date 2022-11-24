@@ -1,5 +1,7 @@
 .banner {
+	background-color: #0e0e0e;
 	width: 100%;
+	min-height: 100%;
 	height: max-content;
 	display: flex;
 	flex-direction: column;
@@ -10,8 +12,6 @@
 }
 .banner-container {
 	padding: 50px 0;
-	position: relative;
-	z-index: 0;
 	height: 700px;
 	width: 100%;
 	color: #fff;
@@ -27,14 +27,14 @@
 .banner-content {
 	padding: 0 20px;
 	/* border-radius: 24px; */
-	width: 50%;
-	height: 100%;
+	width: 100%;
+	height: max-content;
 	/* line-height: 10px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
-	text-align: left;
+	align-items: center;
+	text-align: center;
 	line-height: 20px;
 	color: #000;
 	/* z-index: 1; */
@@ -42,11 +42,41 @@
 }
 .banner-content h1 {
 	font-size: 3rem;
+	color: #fff;
 }
 .banner-content p {
+	color: #fff;
 	width: 70%;
 	font-size: 1.2rem;
 	line-height: 30px;
+	text-align: justify;
+}
+.quotes-content {
+	padding: 40px 20px;
+	width: 100%;
+	height: max-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	row-gap: 30px;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	box-sizing: border-box;
+}
+.quotes-content h1 {
+	font-size: 1.5rem;
+	color: #fff;
+}
+.quote {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: justify;
 }
 
 .card-body {
@@ -59,15 +89,15 @@
 	align-content: center;
 	flex-wrap: wrap;
 	row-gap: 40px;
-
 	/* border: 1px solid red; */
 	margin: 50px 0px;
 }
 .card {
 	width: 40%;
 	height: 200px;
-	background-color: rgb(255, 255, 255);
-	border: 1px solid rgba(0, 0, 0, 0.085);
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
 	border-radius: 12px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.085);
 	display: flex;
@@ -121,10 +151,19 @@
 		align-items: center;
 		text-align: center;
 	}
+	.banner-content > p {
+		width: 90%;
+	}
 	.banner-container > img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+	.quotes-content {
+		flex-direction: column;
+	}
+	.quote {
+		width: 80%;
 	}
 	.card {
 		width: 80%;
