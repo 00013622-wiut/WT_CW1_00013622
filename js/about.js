@@ -13,7 +13,7 @@ const aboutCardSList = [
   {
     title: "Our Curriculum",
     description:
-      "Is prepared through the years of experience along with creativity, passion and ",
+      "Is prepared through the years of experience along with creativity and passion. It is constantly updated to meet the needs of our students.",
   },
   {
     title: "Our Teachers",
