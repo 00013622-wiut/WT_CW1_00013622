@@ -13,12 +13,12 @@ const data = [
   },
   {
     name: "Salokhiddinov Saddriddin",
-    img: "./images/stuff1.jpg",
+    img: "./images/stuff3.jpg",
     position: "Maths Teacher",
   },
   {
     name: "Axmedov Muzaffar",
-    img: "./images/stuff2.jpg",
+    img: "./images/stuff4.jpg",
     position: "Maths Teacher",
   },
 ];
